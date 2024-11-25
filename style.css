@@ -9,11 +9,17 @@ body {
 h1,
 p#description {
   text-align: center;
-  margin: 2em auto;
+  margin: 1em auto;
+}
+p#description {
+  font-size: 14px;
+}
+legend {
+  font-size: 18px;
 }
 form {
   margin: 0 auto;
-  width: 60vw;
+  width: 40vw;
   min-width: 300px;
   max-width: 800px;
   padding: 2em;
@@ -26,7 +32,6 @@ label {
 fieldset {
   margin: 2rem auto;
   border: none;
-  border-bottom: 3px solid grey;
 }
 fieldset:last-of-type {
   border-bottom: none;
@@ -47,6 +52,7 @@ textarea {
   color: #ffffff;
   min-height: 2.4em;
   border-radius: 10px;
+  padding: 7px;
 }
 .inline {
   width: unset;
@@ -64,4 +70,16 @@ input[type="submit"] {
   background-color: #074526;
   border-color: white;
   border-radius: 10px;
+}
+select {
+  width: 250px;
+  height: 2.4em;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #021c0f;
+  color: #ffffff;
+}
+::placeholder {
+  padding: 7px;
+  font-family: Tahoma;
 }
