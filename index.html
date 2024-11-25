@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Media Sosial</title>
+  </head>
+  <body>
+    <section>
+      <form action="#" method="post" id="survey-form">
+        <h1 id="title"><em>Pendapat anda membantu kami lebih kreatif!</em></h1>
+        <p id="description">
+          Kami ingin tahu apa yang Anda sukai dari konten media sosial kami dan
+          bagaimana kami bisa lebih menarik bagi Anda. Bagikan opini Anda dalam
+          survei ini!
+        </p>
+        <fieldset>
+          <legend>Indentitas Responden</legend>
+          <label for="name" id="name-label"
+            >Nama Depan:<input
+              type="text"
+              name="namaDepan"
+              id="name"
+              placeholder="Masukan Nama Depan Anda"
+              required
+          /></label>
+          <label for="name-label"
+            >Nama Belakang:<input
+              type="text"
+              name="namaBelakang"
+              id="name-label"
+              placeholder="Masukan Nama Belakang Anda"
+              required
+          /></label>
+          <label for="number" id="number-label"
+            >Usia:
+            <input
+              type="number"
+              name="usia"
+              id="number"
+              min="13"
+              max="120"
+              placeholder="Usia Anda"
+              required
+          /></label>
+          <label for="email" id="email-label"
+            >Email:<input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Masukan Email Anda"
+              required
+          /></label>
+          <label for="nomorHandphone"
+            >Nomor Handphone:<input
+              type="tel"
+              name="nomorHandphone"
+              id="nomorHandphone"
+              placeholder="Masukan Nomor HP Anda"
+              required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Jenis Kelamin</legend>
+          <label for="lakiLaki"
+            ><input
+              type="radio"
+              name="jenisKelamin"
+              id="lakiLaki"
+              value="lakiLaki"
+              checked
+            />Laki-Laki</label
+          >
+          <label for="perempuan"
+            ><input
+              type="radio"
+              name="jenisKelamin"
+              id="perempuan"
+              value="perempuan"
+            />Perempuan</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Pendidikan Terakhir</legend>
+          <label for="pendidikan">Apa Pendidikan Terakhir Anda?</label>
+          <select name="pendidikan" id="dropdown">
+            <option value="" disabled selected>Pilih Salah Satu</option>
+            <option value="1">Sekolah Dasar</option>
+            <option value="2">Sekolah Menengah Pertama</option>
+            <option value="3">Sekolah Menengah Atas</option>
+            <option value="4">Sarjana</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Penggunaan Sosial Media</legend>
+          <p>Apa platform media sosial yang paling sering Anda gunakan?</p>
+          <label for="instagram"
+            ><input
+              type="checkbox"
+              name="platform"
+              id="instagram"
+              value="instagram"
+              checked
+            />Instagram</label
+          >
+          <label for="tiktok"
+            ><input
+              type="checkbox"
+              name="platform"
+              id="tiktok"
+              value="tiktok"
+            />Tiktok</label
+          >
+          <label for="facebook"
+            ><input
+              type="checkbox"
+              name="platform"
+              id="facebook"
+              value="facebook"
+            />Facebook</label
+          >
+          <label for="twitter"
+            ><input
+              type="checkbox"
+              name="platform"
+              id="twitter"
+              value="twitter"
+            />Twitter</label
+          >
+          <label for="youtube"
+            ><input
+              type="checkbox"
+              name="platform"
+              id="youtube"
+              value="youtube"
+            />Youtube</label
+          >
+          <p>
+            Berapa lama Anda menghabiskan waktu di media sosial setiap hari?
+          </p>
+          <label for="one-hour"
+            ><input
+              type="checkbox"
+              name="hours"
+              id="one-hour"
+              value="1Jam"
+              checked
+            />1 Jam</label
+          >
+          <label for="two-three-hour"
+            ><input
+              type="checkbox"
+              name="hours"
+              id="two-three-hour"
+              value="2-3Jam"
+            />2-3 Jam</label
+          >
+          <label for="five-hour"
+            ><input
+              type="checkbox"
+              name="hours"
+              id="five-hour"
+              value="5Jam"
+            />Lebih dari 5 Jam</label
+          >
+          <p>
+            Jenis konten apa yang paling sering anda nikmati di media sosial?
+          </p>
+          <label for="meme"
+            ><input
+              type="checkbox"
+              name="content"
+              id="meme"
+              value="meme"
+              checked
+            />Meme dan Konten Humor</label
+          >
+          <label for="fotoVideo"
+            ><input
+              type="checkbox"
+              name="content"
+              id="fotoVideo"
+              value="fotoVideo"
+            />Foto dan Video</label
+          >
+          <label for="artikelBlog"
+            ><input
+              type="checkbox"
+              name="content"
+              id="artikelBlog"
+              value="artikelBlog"
+            />Artikel dan Blog</label
+          >
+          <label for="edukasi"
+            ><input
+              type="checkbox"
+              name="content"
+              id="edukasi"
+              value="edukasi"
+            />Edukasi dan Tutorial</label
+          >
+          <label for="reviewProduk"
+            ><input
+              type="checkbox"
+              name="content"
+              id="reviewProduk"
+              value="reviewProduk"
+            />Review Produk</label
+          >
+          <p>Seberapa Sering Anda Mengonsumsi Konten Berita di Media Sosial?</p>
+          <label for="setiapHari"
+            ><input
+              type="checkbox"
+              name="berita"
+              id="setiapHari"
+              value="setiapHari"
+              checked
+            />Setiap Hari</label
+          >
+          <label for="beberapaKali"
+            ><input
+              type="checkbox"
+              name="berita"
+              id="beberapaKali"
+              value="beberapaKali"
+            />Beberapa kali dalam seminggu</label
+          >
+          <label for="kejadianBesar"
+            ><input
+              type="checkbox"
+              name="berita"
+              id="kejadianBesar"
+              value="kejadianBesar"
+            />Hanya saat ada kejadian besar
+          </label>
+          <label for="tidakPernah"
+            ><input
+              type="checkbox"
+              name="berita"
+              id="tidakPernah"
+              value="tidakPernah"
+            />Tidak Pernah</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Saran dan Masukan</legend>
+          <label for="saran"
+            >Bagaimana kami bisa meningkatkan pengalaman Anda di media
+            sosial?<textarea
+              name="saran"
+              id="saran"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <input type="submit" name="submit" id="submit" />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
